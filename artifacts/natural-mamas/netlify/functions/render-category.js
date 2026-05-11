@@ -66,7 +66,9 @@ const CATEGORIES = {
 
 exports.handler = async (event) => {
   try {
-    const slug = (event.queryStringParameters && event.queryStringParameters.slug) || '';
+    const slug = (event.queryStringParameters && event.queryStringParameters.slug)
+      || (event.path || '').replace(/^\/+|\/+$/g, '').split('/').pop()
+      || '';
     const cat = CATEGORIES[slug];
     if (!cat) return { statusCode: 404, body: 'Category not found' };
 
