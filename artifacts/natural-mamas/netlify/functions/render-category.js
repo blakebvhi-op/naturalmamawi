@@ -91,7 +91,7 @@ exports.handler = async (event) => {
     if (!cat) return { statusCode: 404, headers: { 'Content-Type': 'text/plain' }, body: 'Category not found' };
 
     const all = await fetchBusinesses();
-    const businesses = all.filter(b => normalize(b.category) === normalize(cat.name) && normalize(b.state || 'Wisconsin') === normalize(stateFilter));
+    const businesses = all.filter(b => b.category === cat.name && b.state === stateFilter);
 
     businesses.sort((a, b) => {
       if (a.sponsored && !b.sponsored) return -1;
