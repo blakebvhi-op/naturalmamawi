@@ -1,0 +1,101 @@
+# netlify.toml — naturalmamawi.com
+# Lives at the REPO ROOT.
+
+[build]
+  publish    = "artifacts/natural-mamas"
+  functions  = "artifacts/natural-mamas/netlify/functions"
+  command    = ""
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to   = "/.netlify/functions/sitemap"
+  status = 200
+
+[[redirects]]
+  from = "/"
+  to   = "/.netlify/functions/render-home"
+  status = 200
+
+[[redirects]]
+  from = "/herbal-wellness-wisconsin"
+  to   = "/.netlify/functions/render-category?slug=herbal-wellness-wisconsin"
+  status = 200
+[[redirects]]
+  from = "/raw-honey-wisconsin"
+  to   = "/.netlify/functions/render-category?slug=raw-honey-wisconsin"
+  status = 200
+[[redirects]]
+  from = "/natural-skincare-wisconsin"
+  to   = "/.netlify/functions/render-category?slug=natural-skincare-wisconsin"
+  status = 200
+[[redirects]]
+  from = "/organic-food-wisconsin"
+  to   = "/.netlify/functions/render-category?slug=organic-food-wisconsin"
+  status = 200
+[[redirects]]
+  from = "/natural-candles-wisconsin"
+  to   = "/.netlify/functions/render-category?slug=natural-candles-wisconsin"
+  status = 200
+[[redirects]]
+  from = "/natural-baby-products-wisconsin"
+  to   = "/.netlify/functions/render-category?slug=natural-baby-products-wisconsin"
+  status = 200
+
+[[redirects]]
+  from = "/natural-products-milwaukee-wi"
+  to   = "/.netlify/functions/render-region?slug=natural-products-milwaukee-wi"
+  status = 200
+[[redirects]]
+  from = "/natural-products-madison-wi"
+  to   = "/.netlify/functions/render-region?slug=natural-products-madison-wi"
+  status = 200
+[[redirects]]
+  from = "/natural-products-driftless-wi"
+  to   = "/.netlify/functions/render-region?slug=natural-products-driftless-wi"
+  status = 200
+[[redirects]]
+  from = "/natural-products-northwoods-wi"
+  to   = "/.netlify/functions/render-region?slug=natural-products-northwoods-wi"
+  status = 200
+[[redirects]]
+  from = "/natural-products-door-county-wi"
+  to   = "/.netlify/functions/render-region?slug=natural-products-door-county-wi"
+  status = 200
+[[redirects]]
+  from = "/natural-products-fox-valley-wi"
+  to   = "/.netlify/functions/render-region?slug=natural-products-fox-valley-wi"
+  status = 200
+
+[[redirects]]
+  from = "/natural-products-chicago-il"
+  to   = "/?state=Illinois"
+  status = 301
+[[redirects]]
+  from = "/natural-products-twin-cities-mn"
+  to   = "/?state=Minnesota"
+  status = 301
+[[redirects]]
+  from = "/natural-products-detroit-mi"
+  to   = "/?state=Michigan"
+  status = 301
+[[redirects]]
+  from = "/natural-products-columbus-oh"
+  to   = "/?state=Ohio"
+  status = 301
+[[redirects]]
+  from = "/natural-products-kansas-city-mo"
+  to   = "/?state=Missouri"
+  status = 301
+[[redirects]]
+  from = "/natural-products-indianapolis-in"
+  to   = "/?state=Indiana"
+  status = 301
+[[redirects]]
+  from = "/natural-products-st-louis-mo"
+  to   = "/?state=Missouri"
+  status = 301
+
+[[redirects]]
+  from = "/:slug"
+  to   = "/.netlify/functions/render-listing?slug=:slug"
+  status = 200
