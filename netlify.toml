@@ -95,6 +95,131 @@
   to   = "/?state=Missouri"
   status = 301
 
+# State home pages
+[[redirects]]
+  from = "/illinois"
+  to = "/.netlify/functions/render-state?slug=illinois"
+  status = 200
+
+[[redirects]]
+  from = "/minnesota"
+  to = "/.netlify/functions/render-state?slug=minnesota"
+  status = 200
+
+[[redirects]]
+  from = "/michigan"
+  to = "/.netlify/functions/render-state?slug=michigan"
+  status = 200
+
+[[redirects]]
+  from = "/iowa"
+  to = "/.netlify/functions/render-state?slug=iowa"
+  status = 200
+
+# Illinois category pages
+[[redirects]]
+  from = "/herbal-wellness-illinois"
+  to = "/.netlify/functions/render-category?slug=herbal-wellness-illinois"
+  status = 200
+
+[[redirects]]
+  from = "/raw-honey-illinois"
+  to = "/.netlify/functions/render-category?slug=raw-honey-illinois"
+  status = 200
+
+[[redirects]]
+  from = "/natural-skincare-illinois"
+  to = "/.netlify/functions/render-category?slug=natural-skincare-illinois"
+  status = 200
+
+[[redirects]]
+  from = "/organic-food-illinois"
+  to = "/.netlify/functions/render-category?slug=organic-food-illinois"
+  status = 200
+
+[[redirects]]
+  from = "/natural-baby-products-illinois"
+  to = "/.netlify/functions/render-category?slug=natural-baby-products-illinois"
+  status = 200
+
+# Minnesota category pages
+[[redirects]]
+  from = "/herbal-wellness-minnesota"
+  to = "/.netlify/functions/render-category?slug=herbal-wellness-minnesota"
+  status = 200
+
+[[redirects]]
+  from = "/raw-honey-minnesota"
+  to = "/.netlify/functions/render-category?slug=raw-honey-minnesota"
+  status = 200
+
+[[redirects]]
+  from = "/natural-skincare-minnesota"
+  to = "/.netlify/functions/render-category?slug=natural-skincare-minnesota"
+  status = 200
+
+[[redirects]]
+  from = "/organic-food-minnesota"
+  to = "/.netlify/functions/render-category?slug=organic-food-minnesota"
+  status = 200
+
+[[redirects]]
+  from = "/natural-baby-products-minnesota"
+  to = "/.netlify/functions/render-category?slug=natural-baby-products-minnesota"
+  status = 200
+
+# Michigan category pages
+[[redirects]]
+  from = "/herbal-wellness-michigan"
+  to = "/.netlify/functions/render-category?slug=herbal-wellness-michigan"
+  status = 200
+
+[[redirects]]
+  from = "/raw-honey-michigan"
+  to = "/.netlify/functions/render-category?slug=raw-honey-michigan"
+  status = 200
+
+[[redirects]]
+  from = "/natural-skincare-michigan"
+  to = "/.netlify/functions/render-category?slug=natural-skincare-michigan"
+  status = 200
+
+[[redirects]]
+  from = "/organic-food-michigan"
+  to = "/.netlify/functions/render-category?slug=organic-food-michigan"
+  status = 200
+
+[[redirects]]
+  from = "/natural-baby-products-michigan"
+  to = "/.netlify/functions/render-category?slug=natural-baby-products-michigan"
+  status = 200
+
+# Iowa category pages
+[[redirects]]
+  from = "/herbal-wellness-iowa"
+  to = "/.netlify/functions/render-category?slug=herbal-wellness-iowa"
+  status = 200
+
+[[redirects]]
+  from = "/raw-honey-iowa"
+  to = "/.netlify/functions/render-category?slug=raw-honey-iowa"
+  status = 200
+
+[[redirects]]
+  from = "/natural-skincare-iowa"
+  to = "/.netlify/functions/render-category?slug=natural-skincare-iowa"
+  status = 200
+
+[[redirects]]
+  from = "/organic-food-iowa"
+  to = "/.netlify/functions/render-category?slug=organic-food-iowa"
+  status = 200
+
+[[redirects]]
+  from = "/natural-baby-products-iowa"
+  to = "/.netlify/functions/render-category?slug=natural-baby-products-iowa"
+  status = 200
+
 [[redirects]]
   from = "/:slug"
   to   = "/.netlify/functions/render-listing?slug=:slug"
