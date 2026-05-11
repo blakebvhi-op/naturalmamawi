@@ -60,7 +60,9 @@ const REGIONS = {
 
 exports.handler = async (event) => {
   try {
-    const slug = (event.queryStringParameters && event.queryStringParameters.slug) || '';
+    const slug = (event.queryStringParameters && event.queryStringParameters.slug)
+      || (event.path || '').replace(/^\/+|\/+$/g, '').split('/').pop()
+      || '';
     const region = REGIONS[slug];
     if (!region) return { statusCode: 404, body: 'Region not found' };
 
